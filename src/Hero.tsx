@@ -1,10 +1,12 @@
+import { motion } from "motion/react"
 import Stars from "./star";
 
 export default function Hero() {
     return (
         <section id="hero" className="relative min-h-screen bg-gradient-to-b from-[#0a0a23] to-black text-white overflow-hidden mt-1">
+            {/* <motion.div className="bg-blue-400 h-3 w-full top-0 left-0"></motion.div> */}
             <Stars />
-            <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-16">
+            <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-16 mt-6">
                 <img src='generated-image (1).png' alt="Parth waving" className="w-36 h-36 mb-4" />
 
                 <h1 className="text-4xl sm:text-6xl font-light leading-snug">

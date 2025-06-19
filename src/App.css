@@ -6,3 +6,23 @@
   font-weight: 400;
   font-style: normal;
 }
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7c3aed #0a0a23; /* thumb and track */
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0a0a23; /* dark background */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #7c3aed; /* purple thumb */
+  border-radius: 8px;
+  border: 2px solid #0a0a23;
+}
