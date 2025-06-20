@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function Stars() {
-    const starStyles = Array.from({ length: 80 }).map((_, i) => {
+    const starStyles = Array.from({ length: 180 }).map((_, i) => {
         const top = Math.random() * 100;
         const left = Math.random() * 100;
         const size = Math.random() * 2 + 1;

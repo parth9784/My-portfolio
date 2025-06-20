@@ -5,6 +5,8 @@ import About from './About'
 import Stars from './star'
 import Experience from './Experience'
 import Projects from './Projects'
+import Education from './Education'
+import Connect from './Connect'
 function App() {
 
   return (
@@ -14,8 +16,10 @@ function App() {
         <Navbar />
         <Hero />
         <About />
+        <Education />
         <Experience />
         <Projects />
+        <Connect />
 
       </div>
 
