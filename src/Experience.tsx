@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function Experience() {
     const timeline = [
         {
@@ -11,29 +13,43 @@ export default function Experience() {
             date: "Jan 2025 – Present",
             description:
                 "Engineered a Rune-based Bitcoin Testnet app using Bitcoin Core and TypeScript, enabling secure token issuance and Taproot-compliant wallet interactions. Also developed a full-stack Solana AI app with React, Tailwind, Node.js, and Solana Web3.js for real-time decentralized insights.",
-        }
-
+        },
     ];
 
     return (
         <section id="experience" className="w-full py-16 px-6 text-white bg-black font-mono">
-            <div className="max-w-4xl mx-auto">
-                <p className="text-purple-400 text-3xl mb-4">&lt;experience&gt;</p>
+            <motion.div
+                initial={{ opacity: 0, x: -60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="max-w-4xl mx-auto"
+            >
+                {/* Opening Tag */}
+                <p className="text-purple-400 text-2xl mb-4">&lt;experience&gt;</p>
 
                 <div className="relative border-l-2 border-purple-600 pl-6">
                     {[...timeline].reverse().map((item, index) => (
-                        <div key={index} className="mb-12 relative">
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, x: -40 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5, delay: index * 0.15 }}
+                            viewport={{ once: true }}
+                            className="mb-12 relative"
+                        >
                             <div className="absolute -left-4 top-2 w-3 h-3 bg-purple-500 rounded-full border-2 border-white" />
 
                             <h3 className="text-lg text-white font-semibold ml-2">{item.title}</h3>
                             <span className="text-xs text-purple-300">{item.date}</span>
                             <p className="mt-2 text-sm text-gray-400 leading-relaxed">{item.description}</p>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 
-                <p className="text-purple-400 text-3xl mt-6">&lt;/experience&gt;</p>
-            </div>
+                {/* Closing Tag */}
+                <p className="text-purple-400 text-2xl mt-6">&lt;/experience&gt;</p>
+            </motion.div>
         </section>
     );
 }
