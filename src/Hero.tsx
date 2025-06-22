@@ -8,7 +8,7 @@ export default function Hero({ onScrollToConnect }: { onScrollToConnect: () => v
                 <img src="generated-image (1).png" alt="Parth waving" className="w-40 h-40 sm:w-40 sm:h-40 mb-6 shadow-md" />
                 <h1 className="text-4xl sm:text-5xl font-light leading-snug mb-4">
                     I'm <span className="font-bold">Parth Dadhich</span>,<br />
-                    a <span className="italic text-purple-400 font-semibold text-5xl edu">Full Stack Developer</span><br />
+                    a <span className="italic text-purple-400 font-semibold text-5xl md:text-4xl sm:text-3xl edu">Full Stack Developer</span><br />
                     based in <span className="font-bold">Bhilwara, Rajasthan</span>
                 </h1>
                 <p className="mt-4 text-base sm:text-lg text-gray-300 max-w-2xl">
