@@ -13,7 +13,7 @@ export default function Hero({ onScrollToConnect }: { onScrollToConnect: () => v
                 </h1>
                 <p className="mt-4 text-base sm:text-lg text-gray-300 max-w-2xl">
                     I specialize in building full-stack web applications using the <strong>MERN stack</strong>, <strong>Solana Web3</strong>,
-                    and integrating intelligent features with <strong>AI/ML</strong> and <strong>NLP</strong>. I'm passionate about creating
+                    and integrating intelligent features with <strong>AI/ML</strong>. I'm passionate about creating
                     scalable and impactful digital solutions.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8">

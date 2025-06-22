@@ -23,8 +23,6 @@ function App() {
   return (
     <div className="relative bg-gradient-to-b from-[#0a0a23] to-black min-h-screen scroll-smooth overflow-y-hidden">
       <Stars />
-
-
       <Navbar
         onScrollToExperience={() => scrollToSection(experienceRef)}
         onScrollToProjects={() => scrollToSection(projectsRef)}

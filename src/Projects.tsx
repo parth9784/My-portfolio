@@ -44,6 +44,7 @@ export default function Projects() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
                     {projects.map((project, index) => (
                         <motion.div
+                            onClick={() => { window.open(project.link, "_blank") }}
                             key={index}
                             whileHover={{ scale: 1.02 }}
                             initial={{ opacity: 0, y: 40 }}
@@ -59,13 +60,17 @@ export default function Projects() {
                                 className="w-full h-40 object-center"
                             />
 
-                            {/* Static content */}
+
                             <div className="p-4">
                                 <h3 className="text-base font-semibold text-purple-300">{project.title}</h3>
-                                <p className="text-xs text-gray-400">Hover to explore</p>
+
+                                <p className="text-xs text-gray-400 block sm:hidden">Tap to explore</p>
+
+
+                                <p className="text-xs text-gray-400 hidden sm:block">Hover to explore</p>
                             </div>
 
-                            {/* Hover Overlay */}
+
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 whileHover={{ opacity: 1, y: 0 }}
