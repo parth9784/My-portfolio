@@ -192,9 +192,9 @@ export default function Projects() {
                     ))}
                 </div>
 
-                {/* Footer Tag */}
+
                 <p className="text-center text-gray-400 text-xs mt-6 italic">
-                    More exciting projects coming soon!
+                    Innovation doesn’t stop here — exciting builds are on the way!
                 </p>
                 <p className="text-purple-400 text-2xl mt-8">&lt;/projects&gt;</p>
             </div>

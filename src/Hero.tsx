@@ -5,7 +5,7 @@ export default function Hero({ onScrollToConnect }: { onScrollToConnect: () => v
         <section id="hero" className="relative min-h-screen bg-gradient-to-b from-[#0a0a23] to-black text-white overflow-hidden pt-24 sm:pt-28">
             <Stars />
             <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
-                <img src="generated-image (1).png" alt="Parth waving" className="w-32 h-32 sm:w-40 sm:h-40 mb-6 rounded-full shadow-md" />
+                <img src="generated-image (1).png" alt="Parth waving" className="w-40 h-40 sm:w-40 sm:h-40 mb-6 shadow-md" />
                 <h1 className="text-4xl sm:text-5xl font-light leading-snug mb-4">
                     I'm <span className="font-bold">Parth Dadhich</span>,<br />
                     a <span className="italic text-purple-400 font-semibold text-5xl edu">Full Stack Developer</span><br />
@@ -17,7 +17,9 @@ export default function Hero({ onScrollToConnect }: { onScrollToConnect: () => v
                     scalable and impactful digital solutions.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8">
-                    <button className="bg-transparent cursor-pointer text-white px-6 py-2 rounded-full font-semibold text-sm border border-white hover:bg-white hover:text-black transition shadow-md">
+                    <button
+                        onClick={() => window.open("https://drive.google.com/file/d/1NkkCWDTuUY11H6Lbgo1NAYsLGAEgqzQ3/view?usp=sharing", "_blank")}
+                        className="bg-transparent cursor-pointer text-white px-6 py-2 rounded-full font-semibold text-sm border border-white hover:bg-white hover:text-black transition shadow-md">
                         Resume
                     </button>
                     <button onClick={onScrollToConnect} className="bg-transparent cursor-pointer text-white px-6 py-2 rounded-full font-semibold text-sm border border-white hover:bg-white hover:text-black transition shadow-md">
