@@ -15,6 +15,7 @@ function App() {
   const experienceRef = useRef<HTMLDivElement>(null) as React.RefObject<HTMLDivElement>;
   const projectsRef = useRef<HTMLDivElement>(null) as React.RefObject<HTMLDivElement>;
   const connectRef = useRef<HTMLDivElement>(null) as React.RefObject<HTMLDivElement>;
+  const heroRef = useRef<HTMLDivElement>(null) as React.RefObject<HTMLDivElement>;
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -27,9 +28,13 @@ function App() {
         onScrollToExperience={() => scrollToSection(experienceRef)}
         onScrollToProjects={() => scrollToSection(projectsRef)}
         onScrollToConnect={() => scrollToSection(connectRef)}
+        onScrollToHero={() => scrollToSection(heroRef)}
       />
 
-      <Hero onScrollToConnect={() => scrollToSection(connectRef)} />
+      <section ref={heroRef}>
+        <Hero onScrollToConnect={() => scrollToSection(connectRef)} />
+      </section>
+
 
       <section ref={aboutRef}>
         <About />

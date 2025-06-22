@@ -6,10 +6,12 @@ export default function Navbar({
     onScrollToExperience,
     onScrollToProjects,
     onScrollToConnect,
+    onScrollToHero,
 }: {
     onScrollToExperience: () => void;
     onScrollToProjects: () => void;
     onScrollToConnect: () => void;
+    onScrollToHero: () => void;
 }) {
     const { scrollYProgress } = useScroll();
     const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +26,8 @@ export default function Navbar({
         <nav className="w-full overflow-hidden fixed top-0 z-50 bg-black/30 backdrop-blur-md">
             <div className="relative w-full max-w-7xl mx-auto px-4 py-3 flex justify-between items-center text-white">
 
-                <img src="logo.png" alt="logo" className="w-10 h-10 cursor-pointer" />
+                <div onClick={() => onScrollToHero}><img src="logo.png" alt="logo" className="w-10 h-10 cursor-pointer" /></div>
+
 
 
                 <ul className="hidden md:flex gap-6 text-sm sm:text-base">
