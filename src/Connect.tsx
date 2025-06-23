@@ -1,4 +1,4 @@
-import { FaLinkedin, FaEnvelope, FaPhone, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope, FaPhoneAlt, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Connect() {
@@ -37,7 +37,7 @@ export default function Connect() {
                             <span>parthdadhich458@gmail.com</span>
                         </div>
                         <div className="flex items-center gap-3 text-white font-medium text-base">
-                            <FaPhone className="text-lg" />
+                            <FaPhoneAlt className="text-lg" />
                             <span>+91 9784010528</span>
                         </div>
                     </div>

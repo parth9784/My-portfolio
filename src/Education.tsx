@@ -42,7 +42,7 @@ export default function Education() {
                     >
                         <div className="absolute -left-4 top-2 w-3 h-3 bg-purple-500 rounded-full border-2 border-white" />
                         <h3 className="text-lg font-semibold ml-1">Shree Mahesh Public School, Bhilwara</h3>
-                        <span className="text-sm text-purple-300">Class 12th – CBSE | 2021 – 2022</span>
+                        <span className="text-sm text-purple-300">Class 12th – CBSE | 2022</span>
                         <p className="mt-2 text-sm text-gray-400">
                             Scored <span className="text-white font-medium">94%</span> with focus on Mathematics, Physics, and Computer Science.
                         </p>
@@ -58,7 +58,7 @@ export default function Education() {
                     >
                         <div className="absolute -left-4 top-2 w-3 h-3 bg-purple-500 rounded-full border-2 border-white" />
                         <h3 className="text-lg font-semibold ml-1">Shree Mahesh Public School, Bhilwara</h3>
-                        <span className="text-sm text-purple-300">Class 10th – CBSE | 2019 – 2020</span>
+                        <span className="text-sm text-purple-300">Class 10th – CBSE | 2020</span>
                         <p className="mt-2 text-sm text-gray-400">
                             Achieved <span className="text-white font-medium">92.4%</span> with excellence in Science and Mathematics.
                         </p>
