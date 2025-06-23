@@ -22,20 +22,20 @@ export default function About() {
                     <br /><br />
                     I specialize in building scalable, intelligent web applications using the{" "}
                     <span className="text-white font-medium">MERN stack</span>, complemented by modern tools like{" "}
-                    <span className="text-white font-medium">Docker</span>{" "}
-                    and AI frameworks such as{" "}
-                    <span className="text-white font-medium">LangChain</span>. I have also engineered{" "}
-                    <span className="text-white font-medium">Web3-based solutions</span> that seamlessly integrate{" "}
+                    <span className="text-white font-medium">Docker</span> and AI frameworks such as{" "}
+                    <span className="text-white font-medium">LangChain</span>. I have also developed{" "}
+                    <span className="text-white font-medium">Web3-based solutions</span> that integrate{" "}
                     <span className="text-white font-medium">AI capabilities</span> to deliver decentralized, intelligent experiences.
                     <br /><br />
                     My key projects include{" "}
                     <span className="text-white font-medium">BlogBridge</span>, a full-stack blogging platform, and a{" "}
                     <span className="text-white font-medium">LangChain-powered Chrome extension</span> that generates context-aware cover letters and smart tooltips.
                     <br /><br />
-                    Beyond development, I serve as the{" "}
-                    <span className="text-white font-medium">Technical Head of CodeChef Bennett</span>, where I’ve led and organized several technical events and workshops. I’m passionate about{" "}
+                    Beyond development, I have served as the{" "}
+                    <span className="text-white font-medium">Technical Head of CodeChef Bennett</span>, where I have led and organized several technical events and workshops. I am passionate about{" "}
                     <span className="text-white font-medium">mentoring budding developers</span> and fostering a collaborative tech culture on campus.
                 </p>
+
 
 
 
