@@ -101,7 +101,7 @@ export default function Navbar({
                         LinkedIn
                     </a>
                     <a
-                        href="https://drive.google.com/file/d/1NkkCWDTuUY11H6Lbgo1NAYsLGAEgqzQ3/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1JaNFgeUAmLjq1ZgTQzBnFaY7nqmMIXdl/view"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-purple-400 transition"
