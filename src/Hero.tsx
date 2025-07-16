@@ -24,7 +24,7 @@ export default function Hero({ onScrollToConnect }: { onScrollToConnect: () => v
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8">
                     <button
-                        onClick={() => window.open("https://drive.google.com/file/d/1NkkCWDTuUY11H6Lbgo1NAYsLGAEgqzQ3/view?usp=sharing", "_blank")}
+                        onClick={() => window.open("https://drive.google.com/file/d/1JaNFgeUAmLjq1ZgTQzBnFaY7nqmMIXdl/view", "_blank")}
                         className="bg-transparent cursor-pointer text-white px-6 py-2 rounded-full font-semibold text-sm border border-white hover:bg-white hover:text-black transition shadow-md">
                         Resume
                     </button>
