@@ -1,16 +1,18 @@
 import { motion } from "framer-motion";
-
+import { FileText } from 'lucide-react';
 export default function Experience() {
     const timeline = [
         {
             title: "Devslane Training",
             date: "June 2024 – Oct 2024",
+            link: "https://drive.google.com/file/d/1fhizgu4fO0eQvOa254cnWA9BG1lUU6st/view",
             description:
                 "Completed full-stack training covering React.js, Git, UI design, and backend fundamentals under the Devslane Developer Training Program.",
         },
         {
             title: "Software Engineer Intern – CodeYogi",
             date: "Jan 2025 – Present",
+            link: "https://drive.google.com/file/d/1GDYBR_NHz3i-h7UjISgSGRLem1x2NRQu/view",
             description:
                 "Engineered a Rune-based Bitcoin Testnet app using Bitcoin Core and TypeScript, enabling secure token issuance and Taproot-compliant wallet interactions. Also developed a full-stack Solana AI app with React, Tailwind, Node.js, and Solana Web3.js for real-time decentralized insights.",
         },
@@ -41,7 +43,9 @@ export default function Experience() {
                             <div className="absolute -left-4 top-2 w-3 h-3 bg-purple-500 rounded-full border-2 border-white" />
 
                             <h3 className="text-lg text-white font-semibold ml-2">{item.title}</h3>
-                            <span className="text-xs text-purple-300">{item.date}</span>
+                            <span className="text-xs text-purple-300">{item.date} <span><FileText onClick={() => {
+                                window.open(`${item.link}`, "_blank");
+                            }} size={16} className="inline-block ml-1 cursor-pointer" /></span></span>
                             <p className="mt-2 text-sm text-gray-400 leading-relaxed">{item.description}</p>
                         </motion.div>
                     ))}
